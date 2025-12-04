@@ -29,9 +29,11 @@ export function Header() {
               <Sparkles className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-primary">82.3% Accuracy</span>
             </div>
-            <Button variant="outline" size="sm" className="gap-2">
-              <Github className="w-4 h-4" />
-              <span className="hidden sm:inline">View Code</span>
+            <Button variant="outline" size="sm" className="gap-2" asChild>
+              <a href="https://github.com/Nathanchukss/isvp" target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4" />
+                <span className="hidden sm:inline">View Code</span>
+              </a>
             </Button>
             <Button variant="default" size="sm" className="gap-2" asChild>
               <a href="/Nathan-Nwaokocha(Ai).pdf" download="Nathan-Nwaokocha(Ai).pdf">
