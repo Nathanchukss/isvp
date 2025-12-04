@@ -120,6 +120,80 @@ npm run dev
 
 ---
 
+## 📘 User Manual
+
+### Getting Started with the Dashboard
+
+When you open the application, you'll see an interactive dashboard displaying real-time stock prediction simulations.
+
+### Dashboard Components
+
+#### 1. Header Navigation
+- **Research Paper**: Click to download the full research paper (PDF)
+- **View Code**: Opens the GitHub repository in a new tab
+
+#### 2. Key Metrics Display
+The top section shows four real-time metrics:
+- **Current Price**: The latest simulated stock price
+- **24h Change**: Price change percentage over the simulation period
+- **Directional Accuracy**: How often the model correctly predicts price direction (target: 82.3%)
+- **RMSE**: Root Mean Square Error measuring prediction accuracy (lower is better)
+
+#### 3. Prediction Chart
+The main chart visualizes three data streams:
+- **Blue Line (Actual Price)**: Historical/simulated actual stock prices
+- **Purple Line (Transformer Prediction)**: Raw predictions from the Transformer model
+- **Green Line (RL Adjusted)**: Final predictions after RL agent refinement
+
+**Interacting with the chart:**
+- Hover over any point to see detailed values
+- The legend at the bottom shows which lines are displayed
+
+#### 4. Simulation Controls
+
+| Control | Function |
+|---------|----------|
+| **Run/Pause** | Start or pause the real-time simulation |
+| **Reset** (↻) | Reset simulation to initial state |
+| **Show Transformer Predictions** | Toggle visibility of raw Transformer predictions |
+| **Show RL Adjustments** | Toggle visibility of RL-refined predictions |
+| **Simulation Speed** | Adjust how fast data points appear (0.5x to 5x) |
+
+#### 5. Architecture Diagram
+Visual representation of the hybrid AI pipeline:
+1. Raw market data input
+2. Feature extraction and preprocessing
+3. Transformer model processing
+4. RL agent refinement
+5. Final prediction output
+
+#### 6. Model Comparison
+Bar charts comparing our hybrid model against traditional approaches (ARIMA, LSTM, Transformer-only, RL-only) across accuracy metrics.
+
+#### 7. Code Preview
+Tabbed view showing simplified code snippets for:
+- Transformer Model architecture
+- RL Environment setup
+- Training process
+
+### Recommended Usage Flow
+
+1. **Start the simulation** by clicking "Run Simulation"
+2. **Observe** the actual price line building over time
+3. **Toggle on** "Show Transformer Predictions" to see base predictions
+4. **Toggle on** "Show RL Adjustments" to see how RL improves accuracy
+5. **Compare** the lines to understand how the hybrid approach works
+6. **Adjust speed** to view data faster or slower
+7. **Reset** anytime to restart the demonstration
+
+### Tips
+
+- The RL-adjusted line (green) should track closer to actual prices than raw Transformer predictions
+- Watch the Directional Accuracy metric—it shows real-time prediction quality
+- Use slower speeds (0.5x-1x) for detailed analysis, faster speeds (3x-5x) for quick demos
+
+---
+
 ## 📁 Project Structure
 
 ```
