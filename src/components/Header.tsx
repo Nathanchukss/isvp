@@ -33,9 +33,11 @@ export function Header() {
               <Github className="w-4 h-4" />
               <span className="hidden sm:inline">View Code</span>
             </Button>
-            <Button variant="default" size="sm" className="gap-2">
-              <ExternalLink className="w-4 h-4" />
-              <span className="hidden sm:inline">Research Paper</span>
+            <Button variant="default" size="sm" className="gap-2" asChild>
+              <a href="/Nathan-Nwaokocha(Ai).pdf" download="Nathan-Nwaokocha(Ai).pdf">
+                <ExternalLink className="w-4 h-4" />
+                <span className="hidden sm:inline">Research Paper</span>
+              </a>
             </Button>
           </div>
         </div>
