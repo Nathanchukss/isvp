@@ -164,4 +164,4 @@ MIT License - feel free to use and modify for your own projects.
 
 ---
 
-**Built with ❤️ by Nathan Nwaokocha**
+**Built with Lovable by Nathan Nwaokocha**
