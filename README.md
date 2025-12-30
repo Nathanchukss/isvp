@@ -14,8 +14,6 @@ A smart computer system that combines two powerful types of artificial intellige
 
 Visit the live portfolio: [View Portfolio](https://isvp.lovable.app)
 
----
-
 ## 📖 Overview
 
 This project implements a **Hybrid AI System** that combines:
